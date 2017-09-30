@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Imones</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row head bg-warning">
+		<h1>Imones duomenys</h1>
+	</div>
+	<div class="row">
+		<div class="col-4">
+			<form method="POST">
+				<label class="form-check-label">Imones pavadinimas</label>
+				<input class="form-control" type="username" name="imonesname">
+				<label class="form-check-label">Imones kodas</label>
+				<input class="form-control" type="password" name="imonesnumber">
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+		</div>
+		<div class="col">
+			<pre><?php
+			session_start();
+			
+			echo "POST";
+			print_r($_POST);
+
+			echo "SESSION";
+			print_r($_SESSION);
+
+			?><pre>
+		</div>
+	</div>
+</div>
+</body>
+</html>
